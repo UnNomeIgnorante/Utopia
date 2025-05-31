@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Utopia nei Videogiochi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(-45deg, #ffaf7b, #f9d976, #f39c12, #e54b4b);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #222;
+    min-height: 100vh;
+  }
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255,255,255,0.8);
+    backdrop-filter: blur(6px);
+    border-radius: 0 0 20px 20px;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin: 0;
+    color: #444;
+  }
+
+  .game-section {
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: height 0.6s ease;
+    height: 150px;
+    color: white;
+  }
+
+  .game-section:hover {
+    height: 380px;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    transition: background 0.6s ease;
+  }
+
+  .game-section:hover .overlay {
+    background: rgba(0,0,0,0.7);
+  }
+
+  .content {
+    position: relative;
+    padding: 20px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.6s ease;
+  }
+
+  .game-section:hover .content {
+    justify-content: flex-start;
+  }
+
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  }
+
+  .description {
+    margin-top: 15px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 1.1em;
+    line-height: 1.5;
+    transition: opacity 0.6s ease, max-height 0.6s ease;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+  }
+
+  .game-section:hover .description {
+    opacity: 1;
+    max-height: 1000px; /* più grande per testi lunghi */
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Utopia nei Videogiochi</h1>
+</header>
+
+<div class="game-section" style="background-image: url('images/bioshock.jpg');">
+  <div class="overlay"></div>
+  <div class="content">
+    <h2 class="title">BioShock Infinite</h2>
+    <p class="description">
+      Ambientato nella città volante di Columbia, che si presenta come una brillante utopia americana basata su ideali di libertà e progresso, il gioco rivela presto la sua vera natura: un sistema oppressivo fatto di razzismo, fanatismo e disuguaglianze sociali. 
+      Questo contrasto tra l’apparenza utopica e la realtà distopica serve a mostrare come l’utopia possa essere usata come una facciata per giustificare il controllo e l’ingiustizia, una riflessione profonda su come i sogni di perfezione possono nascondere incubi sociali.
+    </p>
+  </div>
+</div>
+
+<div class="game-section" style="background-image: url('images/outerworlds.jpg');">
+  <div class="overlay"></div>
+  <div class="content">
+    <h2 class="title">The Outer Worlds</h2>
+    <p class="description">
+      The Outer Worlds presenta un universo controllato da potenti corporazioni che gestiscono ogni aspetto della vita umana in colonie spaziali. Questo mondo apparentemente ordinato e prospero è in realtà un’utopia distorta, dove la libertà personale è sacrificata sull’altare del profitto e del potere.
+      Il gioco mette in luce i pericoli di una società che si definisce utopica ma che si basa su manipolazioni, corruzione e sfruttamento, ponendo una critica all’ideale utopico quando è manipolato da interessi egoistici.
+    </p>
+  </div>
+</div>
+
+<div class="game-section" style="background-image: url('images/horizon.jpg');">
+  <div class="overlay"></div>
+  <div class="content">
+    <h2 class="title">Horizon Zero Dawn</h2>
+    <p class="description">
+      Ambientato in un futuro post-apocalittico dove la natura ha ripreso il sopravvento su una civiltà tecnologica perduta, Horizon Zero Dawn esplora l’utopia come rinascita e riconciliazione tra uomo, tecnologia e natura.
+      La protagonista, Aloy, scopre come l’equilibrio fragile tra queste forze sia la chiave per un mondo migliore, ma anche come l’utopia sia vulnerabile alle conseguenze delle azioni del passato, mostrando una visione complessa e sfumata del concetto utopico.
+    </p>
+  </div>
+</div>
+
+<div class="game-section" style="background-image: url('images/journey.jpg');">
+  <div class="overlay"></div>
+  <div class="content">
+    <h2 class="title">Journey</h2>
+    <p class="description">
+      Journey è un’esperienza minimalista e simbolica che rappresenta l’utopia come una ricerca spirituale e interiore. Attraverso un viaggio pieno di scoperte e ostacoli, il giocatore vive un percorso di crescita e trascendenza che va oltre la realtà materiale.
+      Il gioco invita a riflettere su come l’utopia possa essere intesa come un ideale personale di perfezione, pace e comunione con il mondo, più che come una società fisica concreta.
+    </p>
+  </div>
+</div>
+
+<div class="game-section" style="background-image: url('images/ff7remake.jpg');">
+  <div class="overlay"></div>
+  <div class="content">
+    <h2 class="title">Final Fantasy VII Remake</h2>
+    <p class="description">
+      Midgar è una metropoli tecnologica e industriale che all’apparenza offre un’utopia di progresso e sviluppo, ma è segnata da forti disuguaglianze sociali e dal devastante impatto ambientale causato dalla megacorporazione Shinra.
+      Il gioco esplora il lato oscuro di un’utopia tecnologica che sacrifica il benessere umano e naturale per mantenere il potere e il profitto, proponendo una critica potente all’idea di progresso illimitato senza coscienza.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
