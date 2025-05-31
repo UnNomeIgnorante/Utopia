@@ -101,6 +101,29 @@
     opacity: 1;
     max-height: 1000px; /* più grande per testi lunghi */
   }
+
+  /* Stile bottone home */
+  .btn-home {
+    display: inline-block;
+    margin: 40px auto 60px auto;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255 255 255 / 0.85);
+    color: #e54b4b;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(229,75,75,0.4);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    display: block;
+    width: max-content;
+  }
+
+  .btn-home:hover {
+    background-color: #e54b4b;
+    color: white;
+  }
 </style>
 </head>
 <body>
@@ -163,10 +186,7 @@
   </div>
 </div>
 
-  <div style="text-align:center;">
-    <a href="index.html" class="btn-home">← Torna alla Home</a>
-  </div>
-</main>
+<a href="index.html" class="btn-home">← Torna alla Home</a>
 
 </body>
 </html>
