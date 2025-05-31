@@ -102,28 +102,27 @@
     max-height: 1000px; /* più grande per testi lunghi */
   }
 
-  /* Stile bottone home */
+  /* Bottone Torna alla Home */
   .btn-home {
     display: inline-block;
-    margin: 40px auto 60px auto;
-    padding: 12px 30px;
-    font-size: 1.2em;
+    padding: 12px 25px;
+    font-size: 1.1em;
     font-family: 'Roboto', sans-serif;
-    background-color: rgba(255 255 255 / 0.85);
-    color: #e54b4b;
+    color: white;
+    background-color: #4b007b;
     border-radius: 25px;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(229,75,75,0.4);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(75,0,123,0.4);
+    transition: background-color 0.3s ease;
+    margin: 30px auto;
     text-align: center;
+    max-width: 200px;
     display: block;
-    width: max-content;
+  }
+  .btn-home:hover {
+    background-color: #6a0080;
   }
 
-  .btn-home:hover {
-    background-color: #e54b4b;
-    color: white;
-  }
 </style>
 </head>
 <body>
@@ -186,7 +185,10 @@
   </div>
 </div>
 
-<a href="index.html" class="btn-home">← Torna alla Home</a>
+<!-- Bottone Torna alla Home -->
+<div style="text-align:center; margin: 40px 0;">
+  <a href="index.html" class="btn-home">← Torna alla Home</a>
+</div>
 
 </body>
 </html>
